@@ -51,13 +51,13 @@ if module == "setFont":
     # TODO: Refactor into a method that checks if is None or whatever
     font_family = GetParams("font_family")
     if font_family is None:
-        font_family = ''
+        font_family = 'Arial'
     font_style = GetParams("font_style")
     if font_style is None:
         font_style = ''
     font_size = GetParams("font_size")
     if font_size is None:
-        font_size = ''
+        font_size = 12
     try:
         data_font = {
             "family": font_family,
@@ -69,3 +69,4 @@ if module == "setFont":
         print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
         PrintException()
         raise e
+

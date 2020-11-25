@@ -89,6 +89,10 @@
               "es": "Fuente",
               "en": "Font"
             },
+            "help": {
+              "es": "Si no se elige una fuente, por defecto sera Arial",
+              "en": "If a font is not defined, by default will be Arial"
+            },
             "options": [
               {
                 "title": "Courier",
