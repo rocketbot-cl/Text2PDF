@@ -24,7 +24,7 @@ Para instalar librerias se debe ingresar por terminal a la carpeta "libs"
 
 """
 base_path = tmp_global_obj["basepath"]
-cur_path = base_path + "modules" + os.sep + "txtToPdf" + os.sep + "libs" + os.sep
+cur_path = base_path + "modules" + os.sep + "Text2PDF" + os.sep + "libs" + os.sep
 sys.path.append(cur_path)
 from txt_to_pdf_service import TxtToPdfService
 
