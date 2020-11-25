@@ -207,8 +207,8 @@
               "en": "/Users/user/Desktop/file.pdf"
             },
             "title": {
-              "es": "Guardar PDF:",
-              "en": "Save PDF:"
+              "es": "Ruta de destino:",
+              "en": "Destination path:"
             },
             "id": "path_pdf",
             "css": "col-md-12"
