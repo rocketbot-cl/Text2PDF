@@ -11,7 +11,7 @@ class TxtToPdfService:
             for line in file_txt:
                 self.text.append(line)
 
-    def write_txt(self, path_pdf, height_line):
+    def write_into_pdf(self, path_pdf, height_line):
         self.pdf.add_page()
         for line in self.text:
             self.pdf.write(height_line, line)
@@ -28,15 +28,3 @@ class TxtToPdfService:
         right = margins['right']
         top = margins['top']
         self.pdf.set_margins(left=left, top=top, right=right)
-
-
-if __name__ == '__main__':
-    txt_to_pdf_service = TxtToPdfService()
-    txt_to_pdf_service.open_txt("demo.txt")
-    data = {
-        'family': 'Arial',
-        'style': '',
-        'size': 10
-    }
-    txt_to_pdf_service.set_font(data)
-    txt_to_pdf_service.write_txt("prueba.pdf", 10)

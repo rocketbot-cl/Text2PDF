@@ -70,3 +70,16 @@ if module == "setFont":
         PrintException()
         raise e
 
+if module == "savePdf":
+    path_pdf = GetParams("path_pdf")
+    line_height = GetParams("line_height")
+    if not path_pdf:
+        raise Exception("No se eligio destino del PDF")
+    if not line_height:
+        line_height = 10
+    try:
+        txt_to_pdf_service.write_into_pdf(path_pdf, line_height)
+    except Exception as e:
+        print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
+        PrintException()
+        raise e
