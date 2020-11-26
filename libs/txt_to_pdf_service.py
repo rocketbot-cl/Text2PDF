@@ -28,3 +28,4 @@ class TxtToPdfService:
         right = margins['right']
         top = margins['top']
         self.pdf.set_margins(left=left, top=top, right=right)
+
