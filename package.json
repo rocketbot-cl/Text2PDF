@@ -2,7 +2,7 @@
   "author": "Nicolas Liendro",
   "description": "Convert .txt files to PDF",
   "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
-  "version": "0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "homepage": "http://rocketbot.co/",
   "linux": true,
@@ -44,6 +44,10 @@
               "es": "Ruta archivo txt:",
               "en": "Path to txt file: "
             },
+            "description": {
+              "es": "Seleccione el archivo txt",
+              "en": "Select the txt file"
+            },
             "id": "path",
             "css": "col-md-12"
           }
@@ -81,9 +85,8 @@
           {
             "type": "select",
             "placeholder": {
-              "es": "",
-              "en": "",
-              "cn": ""
+              "es": "Arial",
+              "en": "Arial"
             },
             "title": {
               "es": "Fuente",
@@ -92,6 +95,10 @@
             "help": {
               "es": "Si no se elige una fuente, por defecto sera Arial",
               "en": "If a font is not defined, by default will be Arial"
+            },
+            "description": {
+              "es": "Fuente que se aplicará al texto. Si no se elige una fuente, por defecto sera Arial",
+              "en": "Font that will be applied to the text. If a font is not defined, by default will be Arial"
             },
             "options": [
               {
@@ -125,9 +132,8 @@
           {
             "type": "select",
             "placeholder": {
-              "es": "",
-              "en": "",
-              "cn": ""
+              "es": "Bold",
+              "en": "Bold"
             },
             "title": {
               "es": "Estilo de fuente",
@@ -136,6 +142,10 @@
             "help": {
               "es": "Los estilos en negrita y cursiva no se aplican a Symbol y ZapfDingbats",
               "en": "Bold and italic styles do not apply to Symbol and ZapfDingbats"
+            },
+            "description": {
+              "es": "Estilo de fuente que se aplicará al texto. Los estilos en negrita y cursiva no se aplican a Symbol y ZapfDingbats",
+              "en": "Font style that will be applied to the text. Bold and italic styles do not apply to Symbol and ZapfDingbats"
             },
             "options": [
               {
@@ -156,13 +166,20 @@
           },
           {
             "type": "input",
-            "placeholder": "12",
+            "placeholder": {
+                "es": "12",
+                "en": "12"
+            },
             "title": {
               "es": "Tamaño de fuente:",
               "en": "Size font"
             },
             "help": {
               "es": "El tamaño de la fuente es en puntos. El valor por defecto es el tamaño actual. Si no se ha especificado ningún tamaño, el valor tomado es 12.",
+              "en": "Font size in points. The default value is the current size. If no size has been specified since the beginning of the document, the value taken is 12."
+            },
+            "description": {
+              "es": "Tamaño de la fuente en puntos. El valor por defecto es el tamaño actual. Si no se ha especificado ningún tamaño, el valor tomado es 12.",
               "en": "Font size in points. The default value is the current size. If no size has been specified since the beginning of the document, the value taken is 12."
             },
             "id": "font_size",
@@ -210,6 +227,10 @@
               "es": "Ruta de destino:",
               "en": "Destination path:"
             },
+            "description": {
+              "es": "Ruta donde se guardara el archivo PDF",
+              "en": "Path where the PDF file will be saved"
+            },
             "id": "path_pdf",
             "css": "col-md-12"
           },
@@ -222,6 +243,10 @@
             "title": {
               "es": "Tamaño de linea:",
               "en": "Line height:"
+            },
+            "description": {
+              "es": "Tamaño de línea. Si no se escribe un tamaño, por defecto sera 10",
+              "en": "Line height. If a size is does not written, by default it will be 10"
             },
             "help": {
               "es": "Si no se escribe un tamaño, por defecto sera 10",

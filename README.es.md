@@ -4,23 +4,23 @@ Convert .txt files to PDF
 
 *Read this in other languages: [English](README.md), [Español](README.es.md).*
 
-## How to install this module
+## Como instalar este módulo
   
-__Download__ and __install__ the content in 'modules' folder in Rocketbot path  
+__Descarga__ e __instala__ el contenido en la carpeta 'modules' en la ruta de Rocketbot.  
 
 
 
 ## Overview
 
 
-1. Open TXT  
-Open a text file
+1. Abrir TXT  
+Abre un archivo de texto
 
-2. Set font  
-Set a type of font to the text
+2. Elegir fuente  
+Elige un tipo de fuente al texto
 
-3. Save PDF  
-Save a PDF file  
+3. Guardar PDF  
+Guarda un archivo PDF  
 
 
 
